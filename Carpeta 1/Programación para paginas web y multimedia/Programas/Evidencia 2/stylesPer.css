@@ -1,0 +1,104 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: right;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 20px 5% 20px 5%;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover{
+    color : #8C918C;
+}
+
+/* Encabezado */
+header {
+    background-color: #0074D9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+
+/* Contenedor principal */
+.profile-details,
+.favorite-movies,
+.favorite-genres,
+.review-history {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+.profile-settings{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

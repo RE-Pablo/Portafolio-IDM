@@ -1,0 +1,54 @@
+.btnContenedor{
+    margin-top: 5%;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 5%;
+}
+
+.boton{
+    padding: 2%;
+    border-radius: 10px;
+    background-color: greenyellow;
+    cursor: pointer;
+    transition-duration: 1.5s;
+}
+
+.boton:hover{
+    padding: 4%;
+    background-color: red;
+    color:white;
+    transform: rotate(360deg);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.boton:active{
+    background-color:rgb(229, 190, 1);
+    color: black;
+}
+
+.carga{
+    padding: 1.5%;
+    animation: Barra 3s infinite;
+    margin-bottom: 5%;
+}
+
+@keyframes Barra {
+    0% {width: 0%; background-color: red;}
+    50%{width: 50%; background-color: yellow;}
+    100% {width: 100%; background-color: green;}
+}
+
+.tarjeta{
+    text-align: center;
+    width: fit-content;
+    border: 1px solid black;
+    margin-left: 43%;
+    transition-duration: 1.5s;
+}
+
+.tarjeta:hover{
+    transform: scale(1.1) rotate(10deg);
+    transition-duration: 1.5s;
+    background-color: orange;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}

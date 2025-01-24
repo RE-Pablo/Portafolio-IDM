@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    body{
+        background-color:coral;
+    }
+    button{
+        background-color: brown;
+    }
+    input{
+        background-color: coral;
+    }
+
+</style>
+<head>
+    <title>Actividad 9</title>
+</head>
+<body>
+    <h1>Calculadora Aumento de Sueldo</h1>
+
+    <p> Sueldo < 10,000 : Aumento del 15%</p>
+    <p> Sueldo >= 10,000 : Aumento del 10%</p>
+    <p>Ingrese el sueldo del trabajador:  <input type="number" id="sueldo"> <button onclick="Aumento()">Calcular</button> </p>
+    <p>Aumento: $<span id="aumento"></span></p>
+    <p>Nuevo sueldo: $<span id="resultado"></span></p>
+
+    <script>
+        function Aumento() {
+            var sueldo, resultado, aumento;
+            sueldo = parseFloat(document.getElementById("sueldo").value);
+            resultado = document.getElementById("resultado");
+
+            if (sueldo < 10000) {
+                aumento = sueldo * 0.15;
+                sueldo += sueldo * 0.15;
+            } else {
+                aumento = sueldo * 0.10;
+                sueldo += sueldo * 0.10;
+            }
+            document.getElementById("aumento").textContent = aumento.toFixed(2);
+            resultado.textContent = sueldo.toFixed(2);
+        }
+    </script>
+</body>
+</html>

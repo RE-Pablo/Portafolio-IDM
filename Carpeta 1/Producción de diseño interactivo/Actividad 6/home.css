@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: sans-serif;
+    position: relative;
+}
+
+footer {
+    background-color: #66CCCC;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+}
+
+
+section {
+    height: 100%;
+}
+
+footer div {
+    text-align: center;
+    padding: 1rem;
+}
+
+header {
+    background-color: #66CCCC;
+    position: relative;
+    z-index: 2;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    z-index: 1;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+    background-color: transparent;
+    font-size: 1.25rem;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+nav button {
+    background-color: #66B2FF;
+    color: black;
+    cursor: pointer;
+    border-radius: 50rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border: 1px solid transparent;
+}
+
+nav button:hover {
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.eventos {
+    padding: 140px 0;
+    position: relative;
+}
+
+.eventos h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #2FA173;
+}
+
+.eventos div {
+    font-size: 20px;
+    text-align: center;   
+}
+
+.container {
+    background-color: #66CCCC;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60vh;
+    margin-bottom: 0;
+}
+
+.img-container {
+    flex: 1;
+    position: absolute;
+    top: 0;
+    margin-left: 5%;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content-container {
+    flex: 1;
+    z-index: 2;
+}
+
+.content-h2{
+    margin-left: 50%;
+    padding-bottom: 8%;
+}
+
+.content-container p{
+    margin-left: 50%;
+    line-height: 2rem;
+}
+
+.boton {
+    background-color: #27F053;
+    border: 3px solid #000;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    margin-top: 6%;
+    margin-left: 50%;
+}
+
+footer i{
+    text-align: right;
+    margin-left: 10px;
+    color: #000;
+}

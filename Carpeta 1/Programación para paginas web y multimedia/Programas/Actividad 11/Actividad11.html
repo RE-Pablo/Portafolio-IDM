@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body{
+            background-color: rgb(135, 130, 238);
+        }
+        input{
+            background-color: rgb(135, 130, 238);
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 11</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Promedio de 3 Calificaciones</h1>
+        
+        <div>
+            <label for="calif1">Calificación 1:</label>
+            <input type="number" id="calif1" v-model="calif1" step="1">
+        </div>
+    
+        <div>
+            <label for="calif2">Calificación 2:</label>
+            <input type="number" id="calif2" v-model="calif2" step="1">
+        </div>
+    
+        <div>
+            <label for="calif3">Calificación 3:</label>
+            <input type="number" id="calif3" v-model="calif3" step="1">
+        </div>
+    
+        <p>El promedio es: {{ promedio }}</p>
+    </div>
+    
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+            calif1: 0,
+            calif2: 0,
+            calif3: 0
+            },
+        computed: {
+            promedio: function() {
+              // Calcular el promedio de las calificaciones
+            return (parseInt(this.calif1) + parseInt(this.calif2) + parseInt(this.calif3)) / 3;
+            }
+        }
+        });
+    </script>
+</body>
+</html>

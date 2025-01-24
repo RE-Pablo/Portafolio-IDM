@@ -1,0 +1,15 @@
+body{
+    background-color: beige;
+}
+.navbar{
+    background-color:grey;
+    width: 600px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+footer{
+    background-color: grey;
+    width: 600px;
+    padding: 25px;
+    box-sizing: border-box;
+}

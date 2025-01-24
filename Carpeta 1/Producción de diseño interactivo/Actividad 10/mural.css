@@ -1,0 +1,79 @@
+svg {
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+    width: 700px;
+    height: 500px;
+}
+
+#sol{
+    fill:yellow;
+}
+
+#nubes{
+    fill: white;
+}
+
+#cielo:hover{
+    fill:gray;
+}
+
+#surf ellipse{
+    fill:brown;
+}
+
+#surf line{
+    stroke:black;
+    stroke-width:10;
+}
+
+#surf:hover {
+    animation: surfAnimation 1s ease infinite alternate;
+}
+
+@keyframes surfAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(30%);
+    }
+}
+
+#texto text {
+    font-size: 22px;
+    fill: white;
+    text-anchor: middle;
+}
+
+#texto rect{
+    fill:gray;
+}
+
+#surf:hover + #texto {
+    opacity: 1;
+}
+
+#texto{
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+#palmera line{
+    stroke:brown;
+    stroke-width:15;
+}
+
+#palmera path{
+    fill:green;
+    stroke-width:2;
+}
+
+#toallas rect{
+    fill:orange;
+}
+
+#toallas line{
+    stroke:white;
+    stroke-width:2;
+}

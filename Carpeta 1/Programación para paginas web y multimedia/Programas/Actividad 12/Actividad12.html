@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body{
+            background-color: rgb(130, 238, 204);
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 12</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>Calculadora Vue.js</h1>
+        <input type="number" v-model="num1" placeholder="Ingrese el primer número">
+        <input type="number" v-model="num2" placeholder="Ingrese el segundo número">
+        <div>
+            <button @click="suma">Suma</button>
+            <button @click="resta">Resta</button>
+            <button @click="multiplicar">Multiplicación</button>
+            <button @click="dividir">División</button>
+        </div>
+        <p>Resultado: {{ resul }}</p>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                num1: 0,
+                num2: 0,
+                resul: 0
+            },
+            methods: {
+                suma: function() {
+                    this.resul = parseFloat(this.num1) + parseFloat(this.num2);
+                },
+                resta: function() {
+                    this.resul = parseFloat(this.num1) - parseFloat(this.num2);
+                },
+                multiplicar: function() {
+                    this.resul = parseFloat(this.num1) * parseFloat(this.num2);
+                },
+                dividir: function() {
+                    if (this.num2 !== 0) {
+                        this.resul = parseFloat(this.num1) / parseFloat(this.num2);
+                    } else {
+                        alert("No se puede dividir por cero");
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

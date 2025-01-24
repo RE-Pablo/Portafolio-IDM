@@ -1,0 +1,119 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover{
+    color : #8C918C;
+}
+
+/* Encabezado */
+header {
+    background-color: #0074D9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.button-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+
+/* Contenedor principal */
+.movie-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+/* Imagen de la película */
+.movie-details img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Títulos y párrafos */
+h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Lista de plataformas de streaming */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Reseñas de usuarios */
+.user-review {
+    margin-top: 20px;
+}
+
+.user-review textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+.user-review .rating {
+    display: flex;
+    align-items: center;
+}
+
+.user-review .rating label {
+    margin-right: 10px;
+}
+
+.user-review .rating select {
+    width: 60px;
+    padding: 5px;
+}
+
+.user-review button {
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

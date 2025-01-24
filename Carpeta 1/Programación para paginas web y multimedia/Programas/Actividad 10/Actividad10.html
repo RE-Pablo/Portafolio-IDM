@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body{
+        background-color:violet;
+    }
+    button{
+        background-color: rgb(0, 145, 255);
+    }
+    input{
+        background-color: violet;
+    }
+</style>
+<head>
+    <title>Actividad 10</title>
+</head>
+<body>
+    <h1>Par / Impar</h1>
+    <p>Introduce un número: <input type="number" id="numeroInput"> <button onclick="obtenerNum()">Aceptar</button> </p>
+    <p id="resultado"></p>
+
+    <script>
+        function ParImpar(numero) {
+            if (numero % 2 === 0) { //Comparación estricta
+                return "El número " +numero+ " es par";
+            } else {
+                return "El número " +numero+ " es impar";
+            }
+        }
+
+        function obtenerNum() {
+            var numero = parseInt(document.getElementById("numeroInput").value);
+            var resultado = ParImpar(numero);
+            document.getElementById("resultado").innerHTML = resultado;
+        }
+    </script>
+</body>
+</html>

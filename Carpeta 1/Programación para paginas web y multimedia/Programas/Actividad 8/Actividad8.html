@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    body{
+        background-color: pink;
+    }
+    button{
+        background-color: red;
+    }
+    input{
+        background-color: pink;
+    }
+</style>
+
+<head>
+    <title>Actividad 8</title>
+</head>
+<body>
+    <h1>Calcular Área de un Círculo</h1>
+    <p>Radio del círculo = <input type="number" id="radio"> <button onclick="AreaCirculo()">Calcular</button> </p>
+    <p>El área del círculo es = <span id="resultado"></span></p>
+
+    <script>
+        function AreaCirculo() {
+
+            var radio, area;
+
+            radio = parseFloat(document.getElementById("radio").value);
+
+            if (isNaN(radio)) {
+                alert("Ingrese un número válido");
+                document.getElementById("radio").value = "";
+                return;
+            }
+
+            area = Math.PI * Math.pow(radio, 2);
+
+            document.getElementById("resultado").textContent = area.toFixed(2);
+        }
+    </script>
+</body>
+</html>
